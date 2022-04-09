@@ -1,0 +1,51 @@
+*, *::after, P::before{
+    box-sizing: border-box;
+    font-weight: normal;
+}
+body{
+    padding:0%;
+    margin:0;
+    background:linear-gradient(to right, lightgray, white);
+}
+.main-class{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    margin:auto;
+    margin-top: 200px;
+    
+    grid-template-rows: minmax(150px, auto) repeat(5, 100px);
+}
+.main-class button{
+    cursor:pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color:lightblue;
+
+}
+.wighder{
+    grid-column:span 2;
+}
+.screen{
+    grid-column:1/ -1;
+    background-color: rgba(48, 93, 164, 0.486);
+    display: flex;
+    align-items : flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding:15px;
+    word-wrap: break-word;
+    word-break: break-all;
+    color:white;
+    border:1px solid white;
+}
+.previous-operand{
+    font-size: 1.5rem;
+}
+.current-operand{
+    font-size: 2.5rem;
+}
+
+
